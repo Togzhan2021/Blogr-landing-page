@@ -1,0 +1,420 @@
+/* Temporal design template*/
+
+:root {
+    --primary: hsl(0, 0%, 100%);
+    --footer-bg: hsl(240, 10%, 16%);
+    --footer-text: hsl(240, 2%, 79%);
+    --background: #fafafa;
+    --cta-hover: hsl(355, 100%, 74%);
+    --cta-text: hsl(356, 100%, 66%);
+    --headings: hsl(208, 49%, 24%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../../design/desktop-design.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: "Ubuntu" sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    /* background: var(--background); */
+}
+
+
+/* navbar styles*/
+
+
+/*end navbar styles*/
+
+
+/* header styles*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 11.5%;
+    padding-top: 58px;
+    height: 120px;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.logo,
+.cta {
+    flex: 1 1 auto;
+}
+
+nav {
+    flex: 5 1 auto;
+}
+
+li,
+a,
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav,
+.cta {
+    padding-top: 8px;
+}
+
+.nav_links {
+    margin-left: 39px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 13px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.nav_links li img {
+    padding-left: 5px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cta a button {
+    background: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.cta a:nth-child(2) {
+    background: #fff;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.cta a:nth-child(2):hover {
+    background: var(--cta-hover)
+}
+
+.cta a:nth-child(2) button {
+    color: var(--cta-text);
+}
+
+.cta a:nth-child(2):hover button {
+    color: #fff;
+}
+
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    /* position: absolute; */
+    transition: all 0.5s ease;
+    left: 0;
+    margin-top: 16px;
+    display: none;
+    left: 20%;
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+.nav_links li:hover>ul,
+.nav_links li .dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.nav_links li .dropdown li {
+    clear: both;
+    position: relative;
+    color: #000;
+    display: block;
+    width: 200px;
+    padding: 12px;
+}
+
+.nav_links li .dropdown li a {
+    color: #000;
+    font-weight: 400;
+}
+
+
+/* end header styles*/
+
+section {
+    position: relative;
+}
+
+footer {
+    position: relative;
+    padding-top: 64px;
+    background-color: var(--footer-bg);
+    height: 300px;
+    border-radius: 0 93px 0 0;
+    color: var(--footer-text);
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 11.5%;
+    align-content: space-between;
+}
+
+footer ul li a {
+    cursor: default;
+}
+
+footer ul li {
+    display: inline-block;
+    flex: 1 0 21%;
+}
+
+footer ul li ul {
+    flex-flow: column;
+    align-items: flex-start;
+    margin-top: 32px;
+    padding: 0;
+}
+
+footer ul li ul li a {
+    font-weight: 400;
+    color: var(--footer-text);
+}
+
+footer ul li ul li {
+    margin: 6px 0;
+}
+
+footer ul li ul li:hover {
+    cursor: pointer;
+    text-decoration: underline var(--footer-text);
+}
+
+
+/*main styles*/
+
+main {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(90deg, #ff8f70, #ff8269, #ff7461, #ff665a, #ff5753, #ff4c50, #ff4451, #ff3d54);
+    height: 562px;
+    border-radius: 0 0 0 93px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100%;
+    z-index: 99;
+    background-image: url(../../images/bg-pattern-intro.svg);
+    background-repeat: no-repeat;
+    background-size: 220%;
+    background-position: 26.5% 54.5%;
+}
+
+.overlay p {
+    margin-top: .6em;
+    font-size: 1.25em;
+    color: #fff;
+}
+
+.overlay a {
+    padding: 13px 14px;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.overlay a:nth-child(1) {
+    background: #fff;
+    color: var(--cta-text);
+    margin-right: 32px;
+}
+
+main h1 {
+    color: #fff;
+    font-size: 3.5em;
+    font-family: "Overpass";
+    margin-top: 4em;
+}
+
+.action {
+    margin-top: 3em;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.action a:nth-child(1):hover {
+    background: var(--cta-hover);
+    color: #fff;
+    border-color: var(--cta-hover);
+}
+
+.action a:nth-child(2):hover {
+    background: var(--primary);
+    color: var(--cta-text);
+    border-color: var(--primary);
+}
+
+h2,
+h3 {
+    text-align: center;
+    font-family: "Overpass";
+}
+
+
+/*end main styles*/
+
+section:nth-child(1) {
+    height: 946px;
+    padding-top: 9rem;
+    background-size: 69%;
+}
+
+section:nth-child(2) {
+    color: var(--primary);
+    height: 48.7vh;
+    background: linear-gradient(90deg, #2c2d3f, #2f3044, #323349, #34364f, #373954, #3a3c59, #3c3e5f, #3f4164);
+    border-radius: 0 98px 0 98px;
+}
+
+section:nth-child(2) .section-description {
+    color: var(--primary);
+    padding: 18px 74px 9px 97px;
+    letter-spacing: 1px;
+    line-height: 1.65rem;
+}
+
+.overlay-section {
+    background: url(../../images/bg-pattern-circles.svg) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: -199px -478px;
+    background-size: 70.5%;
+}
+
+.overlay-section .description {
+    width: 50%;
+    position: absolute;
+    right: 6%;
+    top: 29%;
+}
+
+.phones-3d {
+    z-index: 999;
+    position: absolute;
+    top: -19%;
+    left: 8.5%;
+    width: 39%;
+}
+
+section:nth-child(2) .section-title {
+    color: var(--primary);
+}
+
+section:nth-child(3) {
+    height: 125.5vh;
+    background-image: url(../../images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -73% 94%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-size: 69%;
+}
+
+.sections {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.section-title,
+.sections-title,
+.section-subtitle {
+    color: var(--headings);
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 2.25rem;
+}
+
+.section-subtitle {
+    font-size: 1.5em;
+    text-align: inherit;
+    letter-spacing: 1.3px;
+}
+
+.section-description {
+    font-family: "Overpass";
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding-top: 1.8rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    color: var(--headings)
+}
+
+.sections .section:nth-child(1) {
+    padding-top: 9rem;
+}
+
+.section:nth-child(1) {
+    background-image: url(../../images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 169% 94%;
+}
+
+.sections .section section.section-title {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.articles {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.articles .article:nth-child(2) {
+    padding-top: 4.8rem;
+}
+
+article {
+    width: 50%;
+    padding: 6rem 0rem 0 9.6rem;
+}
+
+
+/*
+.img-chart {
+    width: 49%;
+    height: 100vh;
+    background-image: url(../../images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
