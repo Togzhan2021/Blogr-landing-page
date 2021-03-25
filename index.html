@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <!-- <link href="./assets/css/reset.css" rel="stylesheet"> -->
     <link href="./assets/css/main.css" rel="stylesheet">
 
     <title>Frontend Mentor | [Blogr]</title>
@@ -29,7 +28,7 @@
 <body>
     <div class="menu">
         <a href="/"><img src="./images/logo.svg" alt="Logo Blogr" class="logo"></a>
-        <nav>
+        <nav role="navigation">
             <ul class="nav_links">
                 <li>
                     <a href="javascript:;">Product<img src="./images/icon-arrow-light.svg"> </a>
@@ -100,12 +99,16 @@
                 </div>
             </div>
         </section>
-        <section class="section">
-            <h3 class="section-subtitle">Free, open, simple</h3>
-            <p class="section-description">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with
-                Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-            <h3 class="section-subtitle">Powerful tooling </h3>
-            <p class="section-description">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+        <section class="section ">
+            <article class="article sec-2-1">
+                <h3 class="section-subtitle">Free, open, simple</h3>
+                <p class="section-description">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly
+                    with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+            </article>
+            <article class="article sec-2-2">
+                <h3 class="section-subtitle">Powerful tooling </h3>
+                <p class="section-description">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+            </article>
         </section>
     </div>
     <footer>
@@ -143,7 +146,8 @@
         </ul>
     </footer>
 
-    <!-- <div class="attribution">
+    <!--
+       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
     </div> -->
 

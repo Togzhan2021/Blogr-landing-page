@@ -1,0 +1,64 @@
+main {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(90deg, #ff8f70, #ff8269, #ff7461, #ff665a, #ff5753, #ff4c50, #ff4451, #ff3d54);
+    height: 562px;
+    border-radius: 0 0 0 93px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100%;
+    z-index: 99;
+    background-image: url(../../images/bg-pattern-intro.svg);
+    background-repeat: no-repeat;
+    background-size: 220%;
+    background-position: 26.5% 54.5%;
+}
+
+.overlay p {
+    margin-top: .6em;
+    font-size: 1.25em;
+    color: #fff;
+}
+
+.overlay a {
+    padding: 13px 14px;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.overlay a:nth-child(1) {
+    background: #fff;
+    color: var(--cta-text);
+    margin-right: 32px;
+}
+
+main h1 {
+    color: #fff;
+    font-size: 3.5em;
+    font-family: "Overpass";
+    margin-top: 4em;
+}
+
+.action {
+    margin-top: 3em;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.action a:nth-child(1):hover {
+    background: var(--cta-hover);
+    color: #fff;
+    border-color: var(--cta-hover);
+}
+
+.action a:nth-child(2):hover {
+    background: var(--primary);
+    color: var(--cta-text);
+    border-color: var(--primary);
+}

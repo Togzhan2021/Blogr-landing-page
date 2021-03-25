@@ -1,0 +1,136 @@
+section {
+    position: relative;
+}
+
+section:nth-child(1) {
+    height: 946px;
+    padding-top: 9rem;
+    background-size: 69%;
+}
+
+section:nth-child(2) {
+    color: var(--primary);
+    height: 48.7vh;
+    background: linear-gradient(90deg, #2c2d3f, #2f3044, #323349, #34364f, #373954, #3a3c59, #3c3e5f, #3f4164);
+    border-radius: 0 98px 0 98px;
+}
+
+section:nth-child(2) .section-description {
+    color: var(--primary);
+    padding: 18px 74px 9px 97px;
+    letter-spacing: 1px;
+    line-height: 1.65rem;
+}
+
+.overlay-section {
+    background: url(../../images/bg-pattern-circles.svg) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: -199px -478px;
+    background-size: 70.5%;
+}
+
+.overlay-section .description {
+    width: 50%;
+    position: absolute;
+    right: 6%;
+    top: 29%;
+}
+
+.phones-3d {
+    z-index: 999;
+    position: absolute;
+    top: -19%;
+    left: 8.5%;
+    width: 39%;
+}
+
+section:nth-child(2) .section-title {
+    color: var(--primary);
+}
+
+section:nth-child(3) {
+    height: 125.5vh;
+    background-image: url(../../images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -73% 94%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-size: 69%;
+}
+
+.sections {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.section-title,
+.sections-title,
+.section-subtitle {
+    color: var(--headings);
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 2.25rem;
+}
+
+.section-subtitle {
+    font-size: 1.5em;
+    text-align: inherit;
+    letter-spacing: 1.3px;
+}
+
+.section-description {
+    font-family: "Overpass";
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding-top: 1.8rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: var(--headings)
+}
+
+.sections .section:nth-child(1) {
+    padding-top: 9rem;
+}
+
+.section:nth-child(1) {
+    background-image: url(../../images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 169% 94%;
+}
+
+.sections .section section.section-title {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.articles {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.articles .article:nth-child(2) {
+    padding-top: 4.8rem;
+}
+
+article {
+    width: 50%;
+    padding: 6rem 0rem 0 9.6rem;
+}
+
+.sec-2-1 {
+    position: relative;
+    float: right;
+    /* padding: 16.3rem 13em 0px 1rem;p */
+    padding: 16.3% 13% 0% 1%;
+}
+
+.sec-2-2 {
+    position: relative;
+    float: right;
+    /* padding: 32.5rem 11em 0px 1rem; */
+    /* padding: 32.5% 11% 0% 1%; */
+    margin: 475px -650px;
+}

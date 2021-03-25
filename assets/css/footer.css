@@ -1,0 +1,46 @@
+@charset "UTF-8";
+footer {
+    position: relative;
+    padding-top: 64px;
+    background-color: var(--footer-bg);
+    height: 300px;
+    border-radius: 0 93px 0 0;
+    color: var(--footer-text);
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 11.5%;
+    align-content: space-between;
+}
+
+footer ul li a {
+    cursor: default;
+}
+
+footer ul li {
+    display: inline-block;
+    flex: 1 0 21%;
+}
+
+footer ul li ul {
+    flex-flow: column;
+    align-items: flex-start;
+    margin-top: 32px;
+    padding: 0;
+}
+
+footer ul li ul li a {
+    font-weight: 400;
+    color: var(--footer-text);
+}
+
+footer ul li ul li {
+    margin: 6px 0;
+}
+
+footer ul li ul li:hover {
+    cursor: pointer;
+    text-decoration: underline var(--footer-text);
+}

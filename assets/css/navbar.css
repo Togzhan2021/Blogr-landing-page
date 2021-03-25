@@ -1,0 +1,139 @@
+@charset "UTF-8";
+li,
+a,
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*styles navbar*/
+
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 11.5%;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+nav {
+    width: 75%;
+}
+
+nav>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    padding: 0;
+    position: relative;
+    transition: all linear 0.1s;
+    margin: 0 16px;
+}
+
+nav>ul>li a+ul {
+    background: var(--primary);
+    border-radius: 6px;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .05);
+    display: none;
+    font-size: 1rem;
+    position: absolute;
+    width: 195px;
+}
+
+nav>ul>li:hover a+ul {
+    display: block;
+}
+
+nav>ul>li a+ul>li:hover>a {
+    font-weight: 600;
+}
+
+nav>ul>li>a+ul>li {
+    padding: 12px;
+}
+
+nav>ul>li>a+ul>li a {
+    color: #000;
+    font-weight: 300;
+}
+
+nav>ul>li>a {
+    display: inline-block;
+    padding: 18px 13px;
+}
+
+
+/*end styles navbar*/
+
+
+/*styles cta login/register*/
+
+
+/*end styles cta login/register*/
+
+
+/* .logo,
+.cta {
+    flex: 1 1 auto;
+}
+
+
+
+.logo {
+    cursor: pointer;
+} */
+
+.nav,
+.cta {
+    padding-top: 8px;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cta a button {
+    background: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.cta a:nth-child(2) {
+    background: #fff;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.cta a:nth-child(2):hover {
+    background: var(--cta-hover)
+}
+
+.cta a:nth-child(2) button {
+    color: var(--cta-text);
+}
+
+.cta a:nth-child(2):hover button {
+    color: #fff;
+}
