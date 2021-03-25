@@ -4,10 +4,28 @@
 @import url("header.css");
 @import url("sections.css");
 @import url("footer.css");
+@import url("responsive.css");
 h2,
 h3 {
     text-align: center;
     font-family: "Overpass";
+}
+
+.responsive-menu {
+    position: absolute;
+    display: inline-block;
+    right: 5%;
+    cursor: pointer;
+    outline: crimson;
+}
+
+.img-menu {
+    display: none;
+    content: url("../../images/icon-hamburger.svg");
+}
+
+#img-menu-control:checked+label>.img-menu {
+    content: url("../../images/icon-close.svg");
 }
 
 

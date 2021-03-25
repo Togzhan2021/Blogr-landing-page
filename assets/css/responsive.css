@@ -1,3 +1,16 @@
-@media (min-width:375px) {}
+@media (max-width:375px) {
+    body {
+        background: red;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .arrow {
+        content: url(../../images/icon-arrow-dark.svg);
+    }
+    .img-menu {
+        display: block !important;
+    }
+}
 
 @media (min-width: 1440px) {}
