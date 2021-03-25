@@ -14,9 +14,6 @@ li {
     list-style: none;
 }
 
-
-/*styles navbar*/
-
 .menu {
     display: flex;
     flex-flow: row nowrap;
@@ -29,7 +26,7 @@ li {
 }
 
 nav {
-    width: 75%;
+    width: 60%;
 }
 
 nav>ul {
@@ -58,6 +55,15 @@ nav>ul>li a+ul {
     width: 195px;
 }
 
+nav>ul>li:hover>a {
+    text-decoration: underline;
+}
+
+nav>ul>li:hover .arrow {
+    transition: all ease 0.3s;
+    transform: rotate(180deg);
+}
+
 nav>ul>li:hover a+ul {
     display: block;
 }
@@ -80,27 +86,6 @@ nav>ul>li>a {
     padding: 18px 13px;
 }
 
-
-/*end styles navbar*/
-
-
-/*styles cta login/register*/
-
-
-/*end styles cta login/register*/
-
-
-/* .logo,
-.cta {
-    flex: 1 1 auto;
-}
-
-
-
-.logo {
-    cursor: pointer;
-} */
-
 .nav,
 .cta {
     padding-top: 8px;
@@ -118,6 +103,11 @@ nav>ul>li>a {
     border-radius: 50px;
     cursor: pointer;
     padding: 0 12px;
+    outline: none;
+}
+
+.cta a:nth-child(1) button:hover {
+    text-decoration: underline;
 }
 
 .cta a:nth-child(2) {
@@ -136,4 +126,8 @@ nav>ul>li>a {
 
 .cta a:nth-child(2):hover button {
     color: #fff;
+}
+
+.arrow {
+    padding: 0 6px;
 }
